@@ -43,7 +43,7 @@ public class AchievementControllerIntergrationTests {
 		Achievement testAchievement = new Achievement("This is Dark Souls", "Die for the first time", 10, true);
 		String testAchievementAsJSON = this.mapper.writeValueAsString(testAchievement);
 		RequestBuilder req = post("/create").contentType(MediaType.APPLICATION_PROBLEM_JSON).content(testAchievementAsJSON); // settingcontenttoJSON
-		Achievement testCreatedAchievement = new Achievement(1, "This is Dark Souls", "Die for the first time", 10, true);
+		Achievement testCreatedAchievement = new Achievement(2, "This is Dark Souls", "Die for the first time", 10, true);
 		String testCreatedAchievementAsJSON = this.mapper.writeValueAsString(testCreatedAchievement);
 		ResultMatcher checkStatus = status().isCreated(); // checking if 201
 		ResultMatcher checkBody = content().json(testCreatedAchievementAsJSON); // checks its JSON format

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bae</groupId>
-	<artifactId>Spring-VideoGame</artifactId>
+	<artifactId>Spring-AchievementProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Spring-VideoGame</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Spring-AchievementProject</name>
+	<description>Achievement list project</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

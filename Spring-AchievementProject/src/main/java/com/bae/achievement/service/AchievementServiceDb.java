@@ -2,11 +2,12 @@ package com.bae.achievement.service;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.bae.achievement.domain.Achievement;
 import com.bae.achievement.repo.AchievementRepo;
-
-public class AchievementServiceDb {
+@Service
+public class AchievementServiceDb implements AchievementService{
 
 	private AchievementRepo repo;
 
@@ -21,7 +22,7 @@ public class AchievementServiceDb {
 		Achievement created = this.repo.save(achievement);
 		return created;
 	}
-
+	
 //read
 	public List<Achievement> getAllAchievements() {
 		return this.repo.findAll();

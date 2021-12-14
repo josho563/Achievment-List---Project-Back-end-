@@ -16,6 +16,11 @@ public class Achievement {
 	private Integer achievementValue;
 	private Boolean achievementUnlocked;
 
+	
+	public Achievement() {
+		super();
+	}
+
 	public Achievement(String achievementName, String achievementDescription, Integer achievementValue,
 			Boolean achievementUnlocked) {
 		super();

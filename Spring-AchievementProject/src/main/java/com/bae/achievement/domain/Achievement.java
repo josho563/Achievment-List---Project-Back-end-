@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity //tells my class it will go table to spring data
+@Entity // tells my class it will go table to spring data
 public class Achievement {
 
 	@Id // Primary Key
@@ -15,9 +15,7 @@ public class Achievement {
 	private String achievementDescription;
 	private Integer achievementValue;
 	private Boolean achievementUnlocked;
-	
-	
-	
+
 	public Achievement(String achievementName, String achievementDescription, Integer achievementValue,
 			Boolean achievementUnlocked) {
 		super();
@@ -76,5 +74,5 @@ public class Achievement {
 	public void setAchievementUnlocked(Boolean achievementUnlocked) {
 		this.achievementUnlocked = achievementUnlocked;
 	}
- 
+
 }

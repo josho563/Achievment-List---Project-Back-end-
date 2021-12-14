@@ -76,5 +76,5 @@ public class Achievement {
 	public void setAchievementUnlocked(Boolean achievementUnlocked) {
 		this.achievementUnlocked = achievementUnlocked;
 	}
-	
+ 
 }

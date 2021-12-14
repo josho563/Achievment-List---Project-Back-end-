@@ -21,14 +21,12 @@ public class AchievementController {
 	private AchievementService service;
 
 	@Autowired // spring to fetch the service
-
 	public AchievementController(AchievementService service) {
 		super();
 		this.service = service;
 	}
-
 //create
-	@PostMapping("/create") // 201 Created
+	@PostMapping("/create") //201
 	public ResponseEntity<Achievement> createAchievement(@RequestBody Achievement achievement) {
 		this.service.createAchievement(achievement);
 		Achievement created = this.service.createAchievement(achievement);
@@ -37,13 +35,13 @@ public class AchievementController {
 	}
 
 //read
-	@GetMapping("/getAll") // 200
+	@GetMapping("/getAll") //200
 	public ResponseEntity<List<Achievement>> getAllAchievements() {
 		return ResponseEntity.ok(this.service.getAllAchievements());
 	}
 
 //update
-	@PutMapping("/replace/{id}") // 202 - accepted
+	@PutMapping("/replace/{id}") //202
 	public ResponseEntity<Achievement> replaceAchievement(@PathVariable Integer id,
 			@RequestBody Achievement newAchievement) {
 		Achievement body = this.service.replaceAchievement(id, newAchievement);
@@ -52,7 +50,7 @@ public class AchievementController {
 	}
 
 //delete
-	@DeleteMapping("/remove/{id}") // 204
+	@DeleteMapping("/remove/{id}") //204
 	public ResponseEntity<?> removeAchievement(@PathVariable Integer id) {
 		this.service.removeAchievement(id.intValue());
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);

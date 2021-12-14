@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bae</groupId>
-	<artifactId>Spring-AchievementProject</artifactId>
+	<artifactId>Spring-VideoGame</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Spring-AchievementProject</name>
-	<description>Achievement list project</description>
+	<name>Spring-VideoGame</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -21,6 +21,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.5.13</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

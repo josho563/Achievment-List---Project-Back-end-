@@ -15,17 +15,18 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bae.achievement.domain.Achievement;
 import com.bae.achievement.service.AchievementService;
 
-
-@RestController //Spring is told this is a controller
+@RestController // Spring is told this is a controller
 public class AchievementController {
-	
+
 	private AchievementService service;
-	@Autowired //spring to fetch the service	
-	
+
+	@Autowired // spring to fetch the service
+
 	public AchievementController(AchievementService service) {
 		super();
 		this.service = service;
 	}
+
 //create
 	@PostMapping("/create") // 201 Created
 	public ResponseEntity<Achievement> createAchievement(@RequestBody Achievement achievement) {
@@ -33,19 +34,23 @@ public class AchievementController {
 		Achievement created = this.service.createAchievement(achievement);
 		ResponseEntity<Achievement> response = new ResponseEntity<Achievement>(created, HttpStatus.CREATED);
 		return response;
-}
+	}
+
 //read
 	@GetMapping("/getAll") // 200
 	public ResponseEntity<List<Achievement>> getAllAchievements() {
 		return ResponseEntity.ok(this.service.getAllAchievements());
 	}
+
 //update
 	@PutMapping("/replace/{id}") // 202 - accepted
-	public ResponseEntity<Achievement> replaceAchievement(@PathVariable Integer id, @RequestBody Achievement newAchievement) {
+	public ResponseEntity<Achievement> replaceAchievement(@PathVariable Integer id,
+			@RequestBody Achievement newAchievement) {
 		Achievement body = this.service.replaceAchievement(id, newAchievement);
 		ResponseEntity<Achievement> response = new ResponseEntity<Achievement>(body, HttpStatus.ACCEPTED);
 		return response;
 	}
+
 //delete
 	@DeleteMapping("/remove/{id}") // 204
 	public ResponseEntity<?> removeAchievement(@PathVariable Integer id) {

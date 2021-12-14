@@ -6,10 +6,10 @@ import com.bae.achievement.domain.Achievement;
 
 public interface AchievementService {
 
-	//Create
+	// Create
 	Achievement createAchievement(Achievement achievement);
 
-	//Read All
+	// Read All
 	List<Achievement> getAllAchievements();
 
 	// Update
@@ -18,4 +18,3 @@ public interface AchievementService {
 	// Delete
 	void removeAchievement(Integer id);
 }
-

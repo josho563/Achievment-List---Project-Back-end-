@@ -30,7 +30,6 @@ public class AchievementController {
 //create
 	@PostMapping("/create") //201
 	public ResponseEntity<Achievement> createAchievement(@RequestBody Achievement achievement) {
-		this.service.createAchievement(achievement);
 		Achievement created = this.service.createAchievement(achievement);
 		ResponseEntity<Achievement> response = new ResponseEntity<Achievement>(created, HttpStatus.CREATED);
 		return response;
@@ -39,7 +38,10 @@ public class AchievementController {
 //read
 	@GetMapping("/getAll") //200
 	public ResponseEntity<List<Achievement>> getAllAchievements() {
-		return ResponseEntity.ok(this.service.getAllAchievements());
+		List<Achievement> achievements = this.service.getAllAchievements();
+		ResponseEntity<List<Achievement>> response = new ResponseEntity<List<Achievement>>(achievements, HttpStatus.OK);
+		return response;
+//		return ResponseEntity.ok(this.service.getAllAchievements());
 	}
 
 //update

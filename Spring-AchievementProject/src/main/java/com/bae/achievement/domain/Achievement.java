@@ -16,7 +16,6 @@ public class Achievement {
 	private Integer achievementValue;
 	private Boolean achievementUnlocked;
 
-	
 	public Achievement() {
 		super();
 	}

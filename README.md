@@ -71,15 +71,17 @@ Testing:
 ![image](https://user-images.githubusercontent.com/93252771/146384477-04e71b6f-e1f7-415f-8e0f-ab45978a9cb0.png)
 
  - The above shows my intergration testing, this was done by using MockMVC.
- - My tests used MockMVC to mock a controller class,
- - The tests performed would pull the MockMVC object from the context (all beans) and then peform the request and capture the response.
- 
-- The test would use RequestBuilder to convert my Java to JSON format it would then use a ResultMatcher to check two things.
+The test was done by using MockMVC testing tools.
 
-Firstly that the Status code returned was 201 (Created)
-Secondly that my Java is now in JSON format.
+- In the test MockMVC Is used to mock a controller class,
+The tests performed pulls the MockMVC object from the context (all beans) and then performs the request and captures the response.
+ 
+In this test I have used a RequestBuilder to convert my Java to JSON format.
+I have used a ResultMatcher to check two things have occured in the test that runs.
+Firstly that the Status code returned was 201 (Created)
+Secondly is that my Java is now in JSON format.
+this.mvc is then used to check and told to expect my status to be 201 and the body to be JSON format.
 
-Once done it uses this.mvc to send the request this then checks the status as mentioned above and checks the body for JSON format.
 
 - I have attempted to complte a UNIT test for my achievmentController class. Thus far I have completed a JUNIT/MOCKITO test which tests the customer controller and tests its create method isolated on its own.
 - In this test it injects a mock version of Achievement Service and injects it into the Controller

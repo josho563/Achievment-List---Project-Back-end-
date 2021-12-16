@@ -36,3 +36,5 @@ Testing:
 Front-End Development:
  - During my learning I have been taught about 3 new programming languages HTML, CSS, and JavaScript. This is what I used to build my front-end website to then join up with my API.
  - A key technology found in my project was Axios Library I used this to make HTTP requests for my CRUD functions. 
+
+A Powerpoint Presentation explaining a few additional steps can be found at this location = https://1drv.ms/p/s!AtF_8CvAeq1zueo9ztats6UxXCWmcA?e=q05g6R

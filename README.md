@@ -1,6 +1,7 @@
 # Achievment-List---Project-Front-End
 Introduction:
 The Specifications was to create a CRUD application that covered both front-end and back-end using the technology that I had been taught.
+I choose to make my project list to be a list of video game achievements.
 
 Below outlines the technology I learned for this project
  •	Project Management = Jira
@@ -83,6 +84,8 @@ Front-End Development:
 - I used HTML to build my basic structure for all my data to be inserted into.
  - I used Bootstrap and CSS to help build a structure to my webpage for example I implimented a navbar on my webpage so that users can navigate between the HTML pages.
   - A key technology found in my project was Axios Library I used the javascript language to utilise this Library to make HTTP requests for my CRUD functions this is what let my API intergration take place. 
+
+
 --WireFrame of webpage
 ![image](https://user-images.githubusercontent.com/93252771/146399275-2288e6ff-c513-4007-8788-8d832bf2a3d5.png)
 
@@ -92,6 +95,7 @@ Front-End Development:
 
 
 A Powerpoint Presentation explaining a few additional steps can be found at this location = https://1drv.ms/p/s!AtF_8CvAeq1zueo9ztats6UxXCWmcA?e=q05g6R
+Jira Board URL = https://joshuawillmott.atlassian.net/jira/software/projects/ALP/boards/3
 
 ## Authors
 * **Josh Willmott** - Achievement Project work* - [josho563](https://github.com/josho563)

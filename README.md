@@ -1,4 +1,4 @@
-# Achievment-List---Project-Back-End
+# Achievment-List---Project-Front-End
 Introduction:
 The Specifications was to create a CRUD application that covered both front-end and back-end using the technology that I had been taught.
 
@@ -60,6 +60,10 @@ Secondly that my Java is now in JSON format.
 
 Once done it uses this.mvc to send the request this then checks the status as mentioned above and checks the body for JSON format.
 
+- I have attempted to complte a UNIT test for my achievmentController class. Thus far I have completed a JUNIT/MOCKITO test which tests the customer controller and tests its create method isolated on its own.
+- In this test it injects a mock version of Achievement Service and injects it into the Controller
+- ![image](https://user-images.githubusercontent.com/93252771/146394214-9ddea93a-2b4e-44ea-81c4-152a39d6e447.png)
+
 
 Front-End Development:
  - During my learning I have been taught about 3 new programming languages HTML, CSS, and JavaScript. 
@@ -67,6 +71,10 @@ Front-End Development:
 - I used HTML to build my basic structure for all my data to be inserted into.
  - I used Bootstrap and CSS to help build a structure to my webpage for example I implimented a navbar on my webpage so that users can navigate between the HTML pages.
   - A key technology found in my project was Axios Library I used the javascript language to utilise this Library to make HTTP requests for my CRUD functions this is what let my API intergration take place. 
+
+-- Final Build --
+![image](https://user-images.githubusercontent.com/93252771/146393593-34a1ea1f-4646-4fd7-8f54-36e57f26aa6a.png)
+
 
 
 

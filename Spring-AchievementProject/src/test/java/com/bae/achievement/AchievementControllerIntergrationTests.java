@@ -48,7 +48,7 @@ public class AchievementControllerIntergrationTests {
 		ResultMatcher checkStatus = status().isCreated(); // checking if 201
 		ResultMatcher checkBody = content().json(testCreatedAchievementAsJSON); // checks its JSON format
 
-		this.mvc.perform(req).andExpect(checkStatus).andExpect(checkBody); // sends the request - checks the status -																	// checks the body
+		this.mvc.perform(req).andExpect(checkStatus).andExpect(checkBody); // sends the request - checks the status - // checks the body
 	}
 //getAll
 @Test

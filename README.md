@@ -31,6 +31,9 @@ An example of this was maintaining a version control system throughout and to us
 ![image](https://user-images.githubusercontent.com/93252771/146392754-c55aad72-38ce-418e-926b-e0007f7f38af.png)
 
 
+Risk Assessment
+![Risk Assessment](https://user-images.githubusercontent.com/93252771/146399749-d49ee122-6d7c-4cb0-91f4-3458554e9571.PNG)
+
 Version Control:
 - During my learning period I had also been taught how to use GitHub and how its used for version control.
 - Throughout the project I wanted to stick to the feature branch model to ensure I followed the best practices where possible.
@@ -39,6 +42,15 @@ Databases:
  - I had been taught how to use MySQL workbench and how to create databases. As the Developer I needed to implement a relational database within MySQL, I needed this to store my data persistently for the project once complete, I also needed a H2 database to run tests against.
  -- picture of ERD --
  ![ERD diagram](https://user-images.githubusercontent.com/93252771/146384401-96cd6ff3-6ffe-4b15-b13b-f0c47cddb481.PNG)
+
+--Testing Create in postman
+![testing create in postman](https://user-images.githubusercontent.com/93252771/146399655-690a2b44-22c2-4498-9075-4012c82d31ca.PNG)
+
+-- Testing Read all in postman --
+![testing read in postman](https://user-images.githubusercontent.com/93252771/146399589-e4b128d0-0044-40ca-bd07-68450c8a5f44.PNG)
+
+-- Testing to see if values show in Database --
+![testing sql](https://user-images.githubusercontent.com/93252771/146399527-179df63a-82ce-4012-8b08-ec19ec50c739.PNG)
 
 
 Java SE & Spring Boot:
@@ -71,11 +83,12 @@ Front-End Development:
 - I used HTML to build my basic structure for all my data to be inserted into.
  - I used Bootstrap and CSS to help build a structure to my webpage for example I implimented a navbar on my webpage so that users can navigate between the HTML pages.
   - A key technology found in my project was Axios Library I used the javascript language to utilise this Library to make HTTP requests for my CRUD functions this is what let my API intergration take place. 
+--WireFrame of webpage
+![image](https://user-images.githubusercontent.com/93252771/146399275-2288e6ff-c513-4007-8788-8d832bf2a3d5.png)
+
 
 -- Final Build --
 ![image](https://user-images.githubusercontent.com/93252771/146393593-34a1ea1f-4646-4fd7-8f54-36e57f26aa6a.png)
-
-
 
 
 A Powerpoint Presentation explaining a few additional steps can be found at this location = https://1drv.ms/p/s!AtF_8CvAeq1zueo9ztats6UxXCWmcA?e=q05g6R
@@ -84,8 +97,7 @@ A Powerpoint Presentation explaining a few additional steps can be found at this
 * **Josh Willmott** - Achievement Project work* - [josho563](https://github.com/josho563)
 
 ## Acknowledgments
-a big thanks to the QA team of trainers who have helped me learn.
-Special shout out to QA team
+A big thanks to the QA team of trainers
 Jordan Harrison
 Jordan Benbelaid.
 Anoush Lowton.

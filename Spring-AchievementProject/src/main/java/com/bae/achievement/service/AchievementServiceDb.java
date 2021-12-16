@@ -35,6 +35,7 @@ public class AchievementServiceDb implements AchievementService{
 		existing.setAchievementDescription(newAchievement.getAchievementDescription());
 		existing.setAchievementValue(newAchievement.getAchievementValue());
 		existing.setAchievementUnlocked(newAchievement.getAchievementUnlocked());
+		System.out.println(existing.getAchievementName());
 		Achievement updated = this.repo.save(existing);
 		return updated;
 	}

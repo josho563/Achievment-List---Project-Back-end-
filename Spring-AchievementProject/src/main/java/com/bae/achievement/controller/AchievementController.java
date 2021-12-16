@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,7 @@ import com.bae.achievement.domain.Achievement;
 import com.bae.achievement.service.AchievementService;
 
 @RestController // Spring is told this is a controller
+@CrossOrigin
 public class AchievementController {
 
 	private AchievementService service;
@@ -28,7 +30,6 @@ public class AchievementController {
 //create
 	@PostMapping("/create") //201
 	public ResponseEntity<Achievement> createAchievement(@RequestBody Achievement achievement) {
-		this.service.createAchievement(achievement);
 		Achievement created = this.service.createAchievement(achievement);
 		ResponseEntity<Achievement> response = new ResponseEntity<Achievement>(created, HttpStatus.CREATED);
 		return response;
@@ -37,7 +38,10 @@ public class AchievementController {
 //read
 	@GetMapping("/getAll") //200
 	public ResponseEntity<List<Achievement>> getAllAchievements() {
-		return ResponseEntity.ok(this.service.getAllAchievements());
+		List<Achievement> achievements = this.service.getAllAchievements();
+		ResponseEntity<List<Achievement>> response = new ResponseEntity<List<Achievement>>(achievements, HttpStatus.OK);
+		return response;
+//		return ResponseEntity.ok(this.service.getAllAchievements());
 	}
 
 //update

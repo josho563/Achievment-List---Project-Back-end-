@@ -1,4 +1,4 @@
-# Achievment-List---Project-Back-end-
+# Achievment-List---Project-Back-End
 Introduction:
 The Specifications was to create a CRUD application that covered both front-end and back-end using the technology I had been taught.
 
@@ -20,7 +20,9 @@ Version Control:
 
 Databases:
  - I had been taught how to use MySQL workbench and how to create database. As the Developer I needed to implement a relational database within MySQL, I needed this to store my data persistently for the project I also needed a H2 database to run tests against.
- --Insert picture of ERD --
+ -- picture of ERD --
+ ![ERD diagram](https://user-images.githubusercontent.com/93252771/146384401-96cd6ff3-6ffe-4b15-b13b-f0c47cddb481.PNG)
+
 
 Java SE & Spring Boot:
  - During my learning period I was shown Spring Boot and how it can be used to create an application which can act as an API to join a front end and back-end system togetger.
@@ -28,6 +30,8 @@ Java SE & Spring Boot:
 Testing:
  - I have driven to try and reach an acceptable level of test coverage on back-end this was done by using primaraly MockMVC but also (JUnit4/5 and Mockito).
 -- Insert test picture of MockMVC --
+![image](https://user-images.githubusercontent.com/93252771/146384477-04e71b6f-e1f7-415f-8e0f-ab45978a9cb0.png)
+
 
 Front-End Development:
  - During my learning I have been taught about 3 new programming languages HTML, CSS, and JavaScript. This is what I used to build my front-end website to then join up with my API.

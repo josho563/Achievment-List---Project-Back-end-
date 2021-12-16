@@ -57,6 +57,14 @@ Databases:
 Java SE & Spring Boot:
  - During my learning period I was shown Spring Boot and how it can be used to create an application which can act as an API to join a front-end system and back-end system together.
 
+The back-end of this project was created using Java in a Spring Boot Framework I used  the @Mapping annotation to carry out my Crud functions
+POST = create
+GET = READ
+PUT/PATCH = UPDATE
+DELETE = DELETE
+![image](https://user-images.githubusercontent.com/93252771/146404970-fc90dac9-91f2-4e46-8114-05825ee66ba3.png)
+
+
 Testing:
  - I have attempted to reach an acceptable level of test coverage on back-end this was done by using primaraly MockMVC but also (JUnit4/5 and Mockito).
 -- Picture of MockMVC --
